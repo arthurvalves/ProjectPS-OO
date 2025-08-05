@@ -81,7 +81,7 @@ A modelagem é simples e direta, com cada classe encapsulando seus próprios atr
 ---
 
 ## 🛠️ Desenvolvimentos futuros
-**O sistema continuará sendo aprimorado com as seguintes melhorias previstas:**
+### O sistema continuará sendo aprimorado com as seguintes melhorias previstas:
 
   * Implementação de login:
 
