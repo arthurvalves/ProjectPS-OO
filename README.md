@@ -83,21 +83,21 @@ A modelagem é simples e direta, com cada classe encapsulando seus próprios atr
 ## 🛠️ Desenvolvimentos futuros
 ***O sistema continuará sendo aprimorado com as seguintes melhorias previstas:***
 
-  ### Implementação de login:
+### Implementação de login:
 
 - Autenticação de usuários via CPF (clientes) ou credencial administrativa (admin).
 
-  ### Separação de perfis:
+### Separação de perfis:
 
 - Cliente: poderá visualizar suas reservas ativas/finalizadas, efetuar novas reservas e avaliar o serviço.
 
 - Administrador: terá acesso completo ao sistema, podendo cadastrar veículos, registrar manutenções, consultar relatórios e gerenciar todas as reservas.
 
-  ### Histórico de reservas finalizadas:
+### Histórico de reservas finalizadas:
 
 - Permitir que o cliente visualize suas reservas antigas, incluindo avaliações, incidentes e detalhes do contrato.
 
-  ### Relatórios gerenciais (para o perfil admin):
+### Relatórios gerenciais (para o perfil admin):
 
 - Estatísticas de utilização da frota
 
