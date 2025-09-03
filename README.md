@@ -1,4 +1,4 @@
-# 🚗 Car Rental System
+# 🚗 AV Rental Car System
 
 Este é um sistema estruturado de **locação de veículos**, desenvolvido em Python como parte da disciplina de Projeto de Software.
 
@@ -22,6 +22,17 @@ O sistema oferece funcionalidades completas como cadastro de clientes e veículo
 * ✅ **Avaliação do aluguel** (nota de 1 a 5 e comentário)
 * ✅ **Devolução do veículo** (libera o veículo e opcionalmente registra manutenção e avaliação)
 * ✅ **Listagem de manutenções realizadas em um veículo**
+* ✅ **Login de usuários** (autenticação por CPF para clientes e credencial para admin)
+* ✅ **Perfis diferenciados (Cliente/Admin)**
+
+  * Cliente: efetuar reservas, visualizar histórico, avaliar serviço.
+  * Admin: cadastrar veículos, registrar manutenções, consultar relatórios e gerenciar reservas.
+* ✅ **Histórico de reservas finalizadas** (com avaliações, incidentes e contratos disponíveis)
+* ✅ **Relatórios gerenciais (Admin)**
+
+  * Estatísticas de utilização da frota
+  * Histórico de manutenções
+  * Controle de pagamentos realizados e pendentes
 
 ---
 
@@ -29,9 +40,9 @@ O sistema oferece funcionalidades completas como cadastro de clientes e veículo
 
 ### 🧱 Classes principais:
 
-* `clientes`: gerencia dados de clientes.
+* `clientes`: gerencia dados de clientes e autenticação.
 * `veiculos`: gerencia dados dos veículos, disponibilidade e manutenções.
-* `reserva`: gerencia reservas, pagamentos, devoluções, incidentes e avaliações.
+* `reserva`: gerencia reservas, pagamentos, devoluções, incidentes, avaliações e relatórios.
 
 ### 🔧 Funções principais
 
@@ -46,6 +57,10 @@ O sistema oferece funcionalidades completas como cadastro de clientes e veículo
 * `avaliar_aluguel()`
 * `devolver_veiculo()`
 * `exibir_contrato()`
+* `historico_cliente()`
+* `estatisticas_utilizacao()`
+* `historico_manutencoes()`
+* `controle_pagamentos()`
 * `menu()` – Interface principal de interação com o sistema
 
 ---
@@ -80,35 +95,19 @@ A modelagem é simples e direta, com cada classe encapsulando seus próprios atr
 
 ---
 
-## 🛠️ Desenvolvimentos futuros
-***O sistema continuará sendo aprimorado com as seguintes melhorias previstas:***
-
-### Implementação de login:
-
-- Autenticação de usuários via CPF (clientes) ou credencial administrativa (admin).
-
-### Separação de perfis:
-
-- Cliente: poderá visualizar suas reservas ativas/finalizadas, efetuar novas reservas e avaliar o serviço.
-
-- Administrador: terá acesso completo ao sistema, podendo cadastrar veículos, registrar manutenções, consultar relatórios e gerenciar todas as reservas.
-
-### Histórico de reservas finalizadas:
-
-- Permitir que o cliente visualize suas reservas antigas, incluindo avaliações, incidentes e detalhes do contrato.
-
-### Relatórios gerenciais (para o perfil admin):
-
-- Estatísticas de utilização da frota
-
-- Histórico de manutenções
-
-- Controle de pagamentos realizados e pendentes
-
 ## 🚀 Execução
 
 Para rodar o sistema:
 
+# Clone o repositório
+git clone https://github.com/arthurvalves/ProjectPS-OO.git
+
+# Entre na pasta do projeto
+cd ProjectPS-OO
+
+# Execute o sistema
 ```bash
 python main.py
+```
 
+---
