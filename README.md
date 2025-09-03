@@ -95,6 +95,13 @@ A modelagem é simples e direta, com cada classe encapsulando seus próprios atr
 
 ---
 
+## 🔑 Login
+
+* **Cliente:** faça login usando o **CPF cadastrado**.
+* **Admin:** para acessar o painel administrativo, digite `admin` no campo de CPF e use a senha `admin`.
+
+---
+
 ## 🚀 Execução
 
 Para rodar o sistema:
@@ -110,4 +117,25 @@ cd ProjectPS-OO
 python main.py
 ```
 
+
+Boa 👌 Nesse caso, você pode adicionar uma observação na seção **🚀 Execução**, logo após o comando `python main.py`.
+
+Exemplo de como ficaria no seu README:
+
 ---
+
+## 🚀 Execução
+
+Para rodar o sistema:
+
+```bash
+# Clone o repositório
+git clone https://github.com/arthurvalves/ProjectPS-OO.git
+
+# Entre na pasta do projeto
+cd ProjectPS-OO
+
+# Execute o sistema
+python main.py
+```
+
